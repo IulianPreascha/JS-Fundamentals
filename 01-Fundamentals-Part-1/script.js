@@ -66,7 +66,6 @@ job = 'teacher'
 
 lastName = 'Schmedtmann';
 console.log(lastName);
-*/
 
 //! Math operators
 const now = 2037;
@@ -97,3 +96,50 @@ console.log(ageSarah >= 18);
 const isFullAge = ageSarah >= 18;
 
 console.log(now - 1991 > now - 2018)
+
+const now = 2037;
+const ageJonas = now - 1991;
+const ageSarah = now - 2018;
+
+console.log(now - 1991 > now - 2018)
+
+let x,y;
+x = y = 25 - 10 - 5; // x = y = 10, x = 10
+console.log(x, y);
+
+const avarageAge = (ageJonas + ageSarah) / 2;
+console.log(ageJonas, ageSarah, avarageAge);
+
+//! HUINEA CODE CHALLENGE
+
+const MarkHeight = 1.69;
+const MarkMass = 78;
+
+const JohnHeight = 1.92;
+const JohnMass = 92;
+
+const markHigherBMI = (MarkMass / MarkHeight ** 2).toFixed(2);
+const johnHigherBMI = (JohnMass / JohnHeight ** 2).toFixed(2);
+
+console.log(`Mark BMI = ${(MarkMass / MarkHeight ** 2).toFixed(2)}`);
+console.log(`John BMI = ${(JohnMass / JohnHeight ** 2).toFixed(2)}`);
+
+console.log(markHigherBMI > johnHigherBMI);
+*/
+
+///////////////////////////////////////
+
+//! NORM CODE CHALLENGE
+
+const massMark = 78;
+const heightMark = 1.69;
+const massJohn = 92;
+const heightJohn = 1.92;
+
+const BMIMark = massMark / heightMark ** 2;
+const BMIJohn = massJohn / heightJohn ** 2;
+const markHigherBMI = BMIMark > BMIJohn;
+
+console.log(BMIMark, BMIJohn, markHigherBMI);
+
+
