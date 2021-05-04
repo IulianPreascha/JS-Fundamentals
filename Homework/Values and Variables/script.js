@@ -30,8 +30,19 @@ const description = `${country} is in ${continent}, and its ${population} millio
 // console.log(country + ' is in ' + continent + ', and its ' + population +' million people speak ' + language);
 
 if(population > avarageCountryPopulation) {
-    console.log(`${country} population is above avarage.`)
+    // console.log(`${country} population is above avarage.`)
 } else {
-    console.log(`${country} population is ${avarageCountryPopulation - population} million below avarage`)
+    // console.log(`${country} population is ${avarageCountryPopulation - population} million below avarage`)
 }
+
+const numNeighbours = +prompt('How many neighbour countries does your country have?', '');
+
+if(numNeighbours === 1) {
+    console.log(`Only 1 border!`);
+} else if(numNeighbours > 1) {
+    console.log(`More than 1 border`);
+} else {
+    console.log(`No borders`);
+}
+
 
