@@ -162,7 +162,6 @@ lines');
 console.log(`String
 multiple
 lines`);
-*/
 
 const age = 15;
 
@@ -182,3 +181,20 @@ if(birthYear <= 2000) {
     century = 21;
 }
 console.log(century);
+*/
+
+const massMark = 95;
+const heightMark = 1.88;
+const massJohn = 85;
+const heightJohn = 1.76;
+
+const BMIMark = massMark / heightMark ** 2;
+const BMIJohn = massJohn / heightJohn ** 2;
+
+
+if(BMIMark > BMIJohn) {
+    console.log(`Mark's BMI (${(BMIMark).toFixed(1)}) is higher than John's (${(BMIJohn).toFixed(1)})`);
+} else {
+    console.log(`John's BMI (${(BMIJohn).toFixed(1)}) is higher than Mark's (${(BMIMark).toFixed(1)})`);
+}
+
