@@ -196,7 +196,6 @@ if(BMIMark > BMIJohn) {
 } else {
     console.log(`John's BMI (${(BMIJohn).toFixed(1)}) is higher than Mark's (${(BMIMark).toFixed(1)})`);
 }
-*/
 
 //! TYPE CONVERSION
 const inputYear = '1991';
@@ -214,6 +213,8 @@ console.log('23' - '10' - 3);
 console.log('23' / '2');
 console.log('23' > '18');
 
-let n = '1' + 1;
-n = n - 1;
+let n = '1' + 1; // '11'
+n = n - 1; // 10
 console.log(n);
+*/
+
