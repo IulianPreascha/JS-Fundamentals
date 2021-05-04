@@ -125,7 +125,7 @@ console.log(`Mark BMI = ${(MarkMass / MarkHeight ** 2).toFixed(2)}`);
 console.log(`John BMI = ${(JohnMass / JohnHeight ** 2).toFixed(2)}`);
 
 console.log(markHigherBMI > johnHigherBMI);
-*/
+
 
 ///////////////////////////////////////
 
@@ -141,5 +141,25 @@ const BMIJohn = massJohn / heightJohn ** 2;
 const markHigherBMI = BMIMark > BMIJohn;
 
 console.log(BMIMark, BMIJohn, markHigherBMI);
+*/
 
+const firstName = 'Jonas';
+const job = 'teacher';
+const birthYear = 1991;
+const year = 2037;
 
+const jonas = "I'm " + firstName + ', a ' + (year - birthYear) + ' years old ' + job + '!';
+console.log(jonas);
+
+const jonasNew = `I'm ${firstName}, a ${(year - birthYear)} years old ${job}!`;
+console.log(jonasNew);
+
+console.log(`Just a regular string...`);
+
+console.log('String with \n\
+multiple \n\
+lines');
+
+console.log(`String
+multiple
+lines`);
