@@ -35,14 +35,20 @@ if(population > avarageCountryPopulation) {
     // console.log(`${country} population is ${avarageCountryPopulation - population} million below avarage`)
 }
 
-const numNeighbours = +prompt('How many neighbour countries does your country have?', '');
+// const numNeighbours = +prompt('How many neighbour countries does your country have?', '');
 
-if(numNeighbours === 1) {
-    console.log(`Only 1 border!`);
-} else if(numNeighbours > 1) {
-    console.log(`More than 1 border`);
+// if(numNeighbours === 1) {
+//     console.log(`Only 1 border!`);
+// } else if(numNeighbours > 1) {
+//     console.log(`More than 1 border`);
+// } else {
+//     console.log(`No borders`);
+// }
+
+if((population < 50.0e+6) && (language === "English") && (isIsland === false)) {
+    console.log(`You should live in ${country} :)`);
 } else {
-    console.log(`No borders`);
+    console.log(`${country} does not meeet your cirteria :(`);
 }
 
 
