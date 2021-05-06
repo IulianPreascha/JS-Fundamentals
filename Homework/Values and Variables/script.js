@@ -45,10 +45,59 @@ if(population > avarageCountryPopulation) {
 //     console.log(`No borders`);
 // }
 
-if((population < 50.0e+6) && (language === "English") && (isIsland === false)) {
-    console.log(`You should live in ${country} :)`);
+// if((population < 50.0e+6) && (language === "English") && !isIsland) {
+//     console.log(`You should live in ${country} :)`);
+// } else {
+//     console.log(`${country} does not meeet your cirteria :(`);
+// }
+
+//! CODING CHALLENGE #3
+
+// const dolphinsScore = (96 + 108 + 89)/3;
+// const koalasScore = (88 + 91 + 110)/3;
+
+// console.log((dolphinsScore).toFixed(2), (koalasScore).toFixed(2));
+
+// if(dolphinsScore > koalasScore) {
+//     console.log(`Dolphins have the bigger score (${(dolphinsScore).toFixed(2)})`);
+// } else if(dolphinsScore === koalasScore) {
+//     console.log(`The same score (${(dolphinsScore).toFixed(2)})`);
+// } else if(dolphinsScore < koalasScore) {
+//     console.log(`Koalas have the bigger score (${(koalasScore).toFixed(2)})`);
+// }
+
+// if((dolphinsScore > koalasScore) && (dolphinsScore >= 100)) {
+//     console.log(`Dolphins are the WINERS !`);
+// } else if((koalasScore > dolphinsScore) && (koalasScore >= 100)) {
+//     console.log(`Koalas are the WINERS !`);
+// } else if ((dolphinsScore === koalasScore) && (dolphinsScore >= 100)) {
+//     console.log(`No winners here, teams have the same score`);
+// }
+
+// const scoreDolphins = (96 + 108 + 89)/3;
+// const scoreKoalas = (88 + 91 + 110)/3;
+// console.log(scoreDolphins, scoreKoalas);
+
+// if (scoreDolphins > scoreKoalas) {
+//     console.log(`Dolphins win the trophy 🏆`)
+// } else if (scoreKoalas > scoreDolphins){
+//     console.log(`Koalas win the trophy 🏆`)
+// } else if (scoreDolphins === scoreKoalas) {
+//     console.log(`Both win the trophy! 🏆`)
+// }
+
+// BONUS 1
+
+const scoreDolphins = (97 + 112 + 80)/3;
+const scoreKoalas = (109 + 95 + 50)/3;
+console.log(scoreDolphins, scoreKoalas);
+
+if (scoreDolphins > scoreKoalas && scoreDolphins >= 100) {
+    console.log(`Dolphins win the trophy 🏆`)
+} else if (scoreKoalas > scoreDolphins && scoreKoalas >= 100){
+    console.log(`Koalas win the trophy 🏆`)
+} else if (scoreDolphins === scoreKoalas && scoreDolphins >= 100 && scoreKoalas >= 100) {
+    console.log(`Both win the trophy! 🏆`)
 } else {
-    console.log(`${country} does not meeet your cirteria :(`);
+    console.log(`No one win the trophy 😔`)
 }
-
-
