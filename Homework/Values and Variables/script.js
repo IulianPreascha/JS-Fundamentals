@@ -108,23 +108,27 @@ if(population > avarageCountryPopulation) {
 
 // const yourlanguage = prompt(`What language do you speak?`, ``);
 
-switch(yourlanguage) {
-    case `chinese`:
-    case `mandarian`:
-        console.log(`MOST number of native speakers!`);
-        break;
-    case `spanish`:
-        console.log(`2nd place in number of native speakers`);
-        break;
-    case `english`:
-        console.log(`3rd place`);
-        break;
-    case `hindi`:
-         console.log(`Number 4`);
-         break;
-    case `arabic`:
-        console.log(`5th most spoken language`);
-        break;
-    default:
-        console.log(`Great language too :D`);
-}
+// switch(yourlanguage) {
+//     case `chinese`:
+//     case `mandarian`:
+//         console.log(`MOST number of native speakers!`);
+//         break;
+//     case `spanish`:
+//         console.log(`2nd place in number of native speakers`);
+//         break;
+//     case `english`:
+//         console.log(`3rd place`);
+//         break;
+//     case `hindi`:
+//          console.log(`Number 4`);
+//          break;
+//     case `arabic`:
+//         console.log(`5th most spoken language`);
+//         break;
+//     default:
+//         console.log(`Great language too :D`);
+// }
+
+//! THE CONDITIOAL (TERNARY) OPERATOR
+
+console.log(`${country} population is ${population > 33.0e+6 ? `above` : `below`} avarage.`);
