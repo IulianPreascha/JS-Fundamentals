@@ -131,4 +131,10 @@ if(population > avarageCountryPopulation) {
 
 //! THE CONDITIOAL (TERNARY) OPERATOR
 
-console.log(`${country} population is ${population > 33.0e+6 ? `above` : `below`} avarage.`);
+// console.log(`${country} population is ${population > 33.0e+6 ? `above` : `below`} avarage.`);
+
+//! CODING CHALLENGE #4
+
+const bill = 275;
+const tip = bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+console.log(`The bill was ${bill}, the tip was ${tip}, and the total value ${bill + tip}`);
