@@ -106,7 +106,7 @@ if(population > avarageCountryPopulation) {
 
 //! THE SWITCH STATEMENT
 
-const yourlanguage = prompt(`What language do you speak?`, ``);
+// const yourlanguage = prompt(`What language do you speak?`, ``);
 
 switch(yourlanguage) {
     case `chinese`:
