@@ -35,6 +35,18 @@ const percMoldova2 = percentageOfWorld2(3);
 const percChina2 = percentageOfWorld2(1441);
 const percUSA2 = percentageOfWorld2(332);
 
-console.log(percMoldova1, percChina1, percUSA1);
+// console.log(percMoldova1, percChina1, percUSA1);
 
-console.log(percMoldova2, percChina2, percUSA2);
+// console.log(percMoldova2, percChina2, percUSA2);
+
+//! Arrow functions
+
+const percentageOfWorld3 = population => {
+    return (population / 7900) * 100;
+}
+
+const percMoldova3 = percentageOfWorld3(3);
+const percChina3 = percentageOfWorld3(1441);
+const percUSA3 = percentageOfWorld3(332);
+
+console.log(percMoldova3, percChina3, percUSA3);
