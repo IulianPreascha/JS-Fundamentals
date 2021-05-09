@@ -72,6 +72,33 @@ const describePopulation = (country, population) => {
     console.log(description);
 }
 
-describePopulation('Portugal', 10);
-describePopulation(`China`, 1441);
-describePopulation(`USA`, 332);
+// describePopulation('Portugal', 10);
+// describePopulation(`China`, 1441);
+// describePopulation(`USA`, 332);
+
+//! Coding Challene #1
+
+const calcAvarage = (a, b, c) => (a + b + c) / 3;
+
+// Test 1
+let scoreDolphins = calcAvarage(44, 23, 71);
+let scoreKoalas = calcAvarage(65, 54, 49);
+
+const checkWinner = function (avgDolphins, avgKoalas) {
+    if(avgKoalas >= avgDolphins * 2) {
+        console.log(`Koalas win (${avgKoalas} vs ${avgDolphins})`);
+    } else if(avgDolphins >= avgKoalas * 2) {
+        console.log(`Dolphins win (${avgDolphins} vs. ${avgKoalas})`);
+    } else {
+        console.log(`No winner today ☹`);
+    }
+}
+console.log(`Test 1`);
+checkWinner(scoreDolphins, scoreKoalas);
+
+//Test 2
+scoreDolphins = calcAvarage(85, 54, 41);
+scoreKoalas = calcAvarage(23, 34, 27);
+console.log(`Test 2`);
+
+checkWinner(scoreDolphins, scoreKoalas);
