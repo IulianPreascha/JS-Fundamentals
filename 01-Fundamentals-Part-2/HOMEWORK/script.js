@@ -102,3 +102,5 @@ scoreKoalas = calcAvarage(23, 34, 27);
 console.log(`Test 2`);
 
 checkWinner(scoreDolphins, scoreKoalas);
+
+littleChanges;
