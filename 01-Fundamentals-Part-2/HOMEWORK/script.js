@@ -49,4 +49,29 @@ const percMoldova3 = percentageOfWorld3(3);
 const percChina3 = percentageOfWorld3(1441);
 const percUSA3 = percentageOfWorld3(332);
 
-console.log(percMoldova3, percChina3, percUSA3);
+// console.log(percMoldova3, percChina3, percUSA3);
+
+//! Functions calling other functions
+
+// const describePopulation = (country, population) => {
+//     const percentage = percentageOfWorld1(population);
+//     return `${country} has ${population} million people, which is about ${(percentage).toFixed(2)}% of the world.`;
+// }
+
+// const descPopulationMoldova = describePopulation("Moldova", 3);
+// const descPopulationEngalnd = describePopulation("England", 23);
+// const descPopulationRussia = describePopulation("Russia", 31);
+
+// console.log(descPopulationMoldova);
+// console.log(descPopulationEngalnd);
+// console.log(descPopulationRussia);
+
+const describePopulation = (country, population) => {
+    const percentage = percentageOfWorld1(population);
+    const description = `${country} has ${population} million people, which is about ${(percentage).toFixed(2)}% of the world.`;
+    console.log(description);
+}
+
+describePopulation('Portugal', 10);
+describePopulation(`China`, 1441);
+describePopulation(`USA`, 332);
