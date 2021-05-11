@@ -93,14 +93,22 @@ const checkWinner = function (avgDolphins, avgKoalas) {
         console.log(`No winner today ☹`);
     }
 }
-console.log(`Test 1`);
-checkWinner(scoreDolphins, scoreKoalas);
+// console.log(`Test 1`);
+// checkWinner(scoreDolphins, scoreKoalas);
 
 //Test 2
 scoreDolphins = calcAvarage(85, 54, 41);
 scoreKoalas = calcAvarage(23, 34, 27);
-console.log(`Test 2`);
+// console.log(`Test 2`);
 
-checkWinner(scoreDolphins, scoreKoalas);
+// checkWinner(scoreDolphins, scoreKoalas);
 
-littleChanges;
+// littleChanges;
+
+//! Introducion to Arrays
+
+const populations = [`Moldova`, `China`, `USA`, `Moldova`];
+console.log(populations);
+
+const percentages = [(percMoldova1).toFixed(2), (percChina1).toFixed(2), (percUSA1).toFixed(2), (percMoldova1).toFixed(2)];
+console.log(percentages);
