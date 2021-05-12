@@ -108,7 +108,37 @@ scoreKoalas = calcAvarage(23, 34, 27);
 //! Introducion to Arrays
 
 const populations = [`Moldova`, `China`, `USA`, `Moldova`];
-console.log(populations);
+// console.log(populations);
 
 const percentages = [(percMoldova1).toFixed(2), (percChina1).toFixed(2), (percUSA1).toFixed(2), (percMoldova1).toFixed(2)];
-console.log(percentages);
+// console.log(percentages);
+
+//! Basic Array Operations (Methods)
+
+const neighbours = ['Bulgary', 'Moldova', 'Serbia'];
+
+neighbours.push('Utopia');
+// console.log(neighbours);
+
+neighbours.pop();
+// console.log(neighbours);
+
+if(!neighbours.includes('Germany')) {
+    // console.log(`Probably not a central European country :D`);
+}
+
+neighbours[neighbours.indexOf('Moldova')] = 'Republic of Moldova';
+// console.log(neighbours);
+
+//! Coding Challene #2
+
+const calcTip = bill => bill >= 50 && bill <= 300 ? bill *= 0.15 : bill *= 0.2;
+console.log(calcTip(300));
+
+const bills = [125, 555, 44];
+// tip1 = calcTip(bills[0]);
+const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+console.log(bills, tips);
+
+const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
+console.log(totals);
