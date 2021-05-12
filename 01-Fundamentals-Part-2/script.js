@@ -118,7 +118,6 @@ const firstName = 'Jonas';
 const jonas = [firstName, 'Schmedtmann', 2037 - 1991, 'teacher', friends];
 console.log(jonas);
 console.log(jonas.length);
-*/
 
 // Exercise
 const calcAge = function (birthYear) {
@@ -133,3 +132,36 @@ console.log(age1, age2, age3);
 
 const ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years[years.length - 1])];
 console.log(ages);
+*/
+
+const friends = ['Michael', 'Steven', 'Peter'];
+
+// Add elements
+const newLenght = friends.push('Jay');
+console.log(friends);
+console.log(newLenght);
+
+friends.unshift('John');
+console.log(friends);
+
+// Remove elements
+friends.pop(); // last
+const popped = friends.pop(); // last
+console.log(popped);
+console.log(friends);
+
+friends.shift(); // first
+console.log(friends);
+
+console.log(friends.indexOf('Steven'));
+console.log(friends.indexOf('Bob'));
+
+friends.push(23);
+console.log(friends.includes('Steven'));
+console.log(friends.includes('Bob'));
+console.log(friends.includes(23));
+
+if(friends.includes('Steven')) {
+    console.log(`You have a friend called Steven`);
+}
+
