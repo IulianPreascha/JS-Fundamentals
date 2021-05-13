@@ -133,12 +133,22 @@ neighbours[neighbours.indexOf('Moldova')] = 'Republic of Moldova';
 //! Coding Challene #2
 
 const calcTip = bill => bill >= 50 && bill <= 300 ? bill *= 0.15 : bill *= 0.2;
-console.log(calcTip(300));
+// console.log(calcTip(300));
 
 const bills = [125, 555, 44];
 // tip1 = calcTip(bills[0]);
 const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
-console.log(bills, tips);
+// console.log(bills, tips);
 
 const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
-console.log(totals);
+// console.log(totals);
+
+//! Introduction to objects
+
+const myCountry = {
+    country: 'Moldova',
+    capital: 'Chisinau',
+    language: 'Romanian',
+    population: '2.3e+6',
+    neighbours: ['Romania', 'Ucraine']
+};
