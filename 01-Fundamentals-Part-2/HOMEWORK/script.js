@@ -201,8 +201,14 @@ const johnBMI = {
     }
 };
 
-if(markBMI.calcBMI() > johnBMI.calcBMI()) {
-    console.log(`${markBMI.fisrtName}'s BMI (${(markBMI.calcBMI()).toFixed(1)}) is higher than ${johnBMI.fisrtName}'s (${(johnBMI.calcBMI()).toFixed(1)})!`);
-} else if (markBMI.calcBMI() < johnBMI.calcBMI()) {
-    console.log(`${johnBMI.fisrtName}'s BMI (${(johnBMI.calcBMI()).toFixed(1)}) is higher than ${markBMI.fisrtName}'s (${(markBMI.calcBMI()).toFixed(1)})!`);
-} else console.log(`Both have the same BMI (${(markBMI.calcBMI()).toFixed(1)})!`)
+// if(markBMI.calcBMI() > johnBMI.calcBMI()) {
+//     console.log(`${markBMI.fisrtName}'s BMI (${(markBMI.calcBMI()).toFixed(1)}) is higher than ${johnBMI.fisrtName}'s (${(johnBMI.calcBMI()).toFixed(1)})!`);
+// } else if (markBMI.calcBMI() < johnBMI.calcBMI()) {
+//     console.log(`${johnBMI.fisrtName}'s BMI (${(johnBMI.calcBMI()).toFixed(1)}) is higher than ${markBMI.fisrtName}'s (${(markBMI.calcBMI()).toFixed(1)})!`);
+// } else console.log(`Both have the same BMI (${(markBMI.calcBMI()).toFixed(1)})!`)
+
+//! Loops
+
+for(let voter = 1; voter <= 50; voter++) {
+    console.log(`Voter number ${voter} is currently voting`);
+}
