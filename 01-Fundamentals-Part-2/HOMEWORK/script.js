@@ -172,5 +172,37 @@ myCountry['population'] -= 2;
 
 //! Object Methods
 
-console.log(myCountry.describe());
-console.log(myCountry.checkIsland());
+// console.log(myCountry.describe());
+// console.log(myCountry.checkIsland());
+
+//! CODING CHALLENGE #3
+
+const markBMI = {
+    fisrtName: 'Mark',
+    lastName: 'Miller',
+    mass: 78,
+    height: 1.69,
+
+    calcBMI: function() {
+        this.bmi = this.mass / this.height ** 2;
+        return this.bmi;
+    }
+};
+
+const johnBMI = {
+    fisrtName: 'John',
+    lastName: 'Smith',
+    mass: 92,
+    height: 1.95,
+
+    calcBMI: function() {
+        this.bmi = this.mass / this.height ** 2;
+        return this.bmi;
+    }
+};
+
+if(markBMI.calcBMI() > johnBMI.calcBMI()) {
+    console.log(`${markBMI.fisrtName}'s BMI (${(markBMI.calcBMI()).toFixed(1)}) is higher than ${johnBMI.fisrtName}'s (${(johnBMI.calcBMI()).toFixed(1)})!`);
+} else if (markBMI.calcBMI() < johnBMI.calcBMI()) {
+    console.log(`${johnBMI.fisrtName}'s BMI (${(johnBMI.calcBMI()).toFixed(1)}) is higher than ${markBMI.fisrtName}'s (${(markBMI.calcBMI()).toFixed(1)})!`);
+} else console.log(`Both have the same BMI (${(markBMI.calcBMI()).toFixed(1)})!`)

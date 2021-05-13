@@ -243,7 +243,7 @@ const jonas = {
 
 //? Challenge
 
-console.log(jonas.getSummary());
+// console.log(jonas.getSummary());
 
 
 
