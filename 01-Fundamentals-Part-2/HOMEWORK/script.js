@@ -78,11 +78,12 @@ const describePopulation = (country, population) => {
 
 //! Coding Challene #1
 
-const calcAvarage = (a, b, c) => (a + b + c) / 3;
+// 
+
 
 // Test 1
-let scoreDolphins = calcAvarage(44, 23, 71);
-let scoreKoalas = calcAvarage(65, 54, 49);
+// let scoreDolphins = calcAvarage(44, 23, 71);
+// let scoreKoalas = calcAvarage(65, 54, 49);
 
 const checkWinner = function (avgDolphins, avgKoalas) {
     if(avgKoalas >= avgDolphins * 2) {
@@ -97,8 +98,8 @@ const checkWinner = function (avgDolphins, avgKoalas) {
 // checkWinner(scoreDolphins, scoreKoalas);
 
 //Test 2
-scoreDolphins = calcAvarage(85, 54, 41);
-scoreKoalas = calcAvarage(23, 34, 27);
+// scoreDolphins = calcAvarage(85, 54, 41);
+// scoreKoalas = calcAvarage(23, 34, 27);
 // console.log(`Test 2`);
 
 // checkWinner(scoreDolphins, scoreKoalas);
@@ -132,16 +133,16 @@ neighbours[neighbours.indexOf('Moldova')] = 'Republic of Moldova';
 
 //! Coding Challene #2
 
-const calcTip = bill => bill >= 50 && bill <= 300 ? bill *= 0.15 : bill *= 0.2;
-// console.log(calcTip(300));
+// const calcTip = bill => bill >= 50 && bill <= 300 ? bill *= 0.15 : bill *= 0.2;
+// // console.log(calcTip(300));
 
-const bills = [125, 555, 44];
+// const bills = [125, 555, 44];
 // tip1 = calcTip(bills[0]);
-const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
-// console.log(bills, tips);
+// const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+// // console.log(bills, tips);
 
-const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
-// console.log(totals);
+// const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
+// // console.log(totals);
 
 //! Introduction to objects
 
@@ -238,8 +239,37 @@ const listOfNeighbours = [
 //     }
 // }
 
-for( let i = 0; i < listOfNeighbours.length; i++) {
-    for( let y = 0; y < listOfNeighbours[i].length; y++) {
-        console.log(`Neigbours: ${listOfNeighbours[i][y]}`);
-    }
+// for( let i = 0; i < listOfNeighbours.length; i++) {
+//     for( let y = 0; y < listOfNeighbours[i].length; y++) {
+//         console.log(`Neigbours: ${listOfNeighbours[i][y]}`);
+//     }
+// }
+
+//! CODING CHALLENGE #4
+
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+const tips = [];
+const totals = [];
+
+const calcTip = function(bill) {
+    return bill >= 50 && bill <= 300 ? bill *= 0.15 : bill *= 0.2;
 }
+
+for(let i = 0; i < bills.length; i++) {
+    const tip = calcTip(bills[i]);
+    tips.push(tip);
+    totals.push(tip + bills[i]);
+}
+console.log(bills, tips, totals);
+
+const calcAvarage = function(arr) {
+    let sum = 0;
+    for(let i = 0; i < arr.length; i++) {
+        // sum = sum + arr[i];
+        sum += arr[i];
+    }
+    return sum / arr.length;
+}
+console.log(calcAvarage([2,3,7]));
+console.log(calcAvarage(totals));
+console.log(calcAvarage(tips));
