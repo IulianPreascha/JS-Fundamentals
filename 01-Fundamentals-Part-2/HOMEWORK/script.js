@@ -222,4 +222,24 @@ for (let i = 0; i < populations2.length; i++) {
     const perc = (percentageOfWorld1(populations2[i])).toFixed(1);
     percentages2.push(perc);
 }
-console.log(percentages2);
+// console.log(percentages2);
+
+//! Looping Backwords and Loops in Loops
+
+const listOfNeighbours = [
+    [`Canada`, `Mexico`], 
+    ['Spain'], 
+    ['Norway', 'Sweden', 'Russia']
+];
+
+// for( let i = 0; i < listOfNeighbours.length; i++) {
+//     for(let y = 0; y < listOfNeighbours[i].length; y++) {
+//         console.log(i, y, `Neighbour: ${listOfNeighbours[i][y]}`);
+//     }
+// }
+
+for( let i = 0; i < listOfNeighbours.length; i++) {
+    for( let y = 0; y < listOfNeighbours[i].length; y++) {
+        console.log(`Neigbours: ${listOfNeighbours[i][y]}`);
+    }
+}
