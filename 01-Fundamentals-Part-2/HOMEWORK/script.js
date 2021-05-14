@@ -209,6 +209,17 @@ const johnBMI = {
 
 //! Loops
 
-for(let voter = 1; voter <= 50; voter++) {
-    console.log(`Voter number ${voter} is currently voting`);
+// for(let voter = 1; voter <= 50; voter++) {
+//     console.log(`Voter number ${voter} is currently voting`);
+// }
+
+//! Looping Arrays, Breaking and Continuing
+
+const populations2 = [10, 1441, 332, 83];
+const percentages2 = [];
+
+for (let i = 0; i < populations2.length; i++) {
+    const perc = (percentageOfWorld1(populations2[i])).toFixed(1);
+    percentages2.push(perc);
 }
+console.log(percentages2);
