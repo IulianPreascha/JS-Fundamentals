@@ -206,7 +206,7 @@ console.table(jonas);
 //? Challenge
 
 console.log(`${jonas.firstName} has ${jonas.friends.length} friends, and his best friend is called ${jonas.friends[0]}.`);
-*/
+
 
 const jonas = {
     firstName: 'Jonas',
@@ -253,5 +253,28 @@ const jonas = {
 for(let rep = 1; rep <= 10; rep++) {
     console.log(`Lifting weights repetition ${rep} 🏋️‍♀️`);
 }
+*/
 
+//! Looping Arrays, Breaking and Continuing
 
+const jonas = [
+    'Jonas',
+    'Schedtmann',
+    2037 - 1991,
+    'teacher',
+    ['Michael', 'Peter', 'Steven'],
+    true
+];
+
+const types = [];
+
+for(let i = 0; i < jonas.length; i++) {
+    // Reading from jonas array
+    console.log(jonas[i], typeof jonas[i]);
+
+    // Filling types array
+    // types[i] = typeof jonas[i];
+    types.push(typeof jonas[i]);
+}
+
+console.log(types);
