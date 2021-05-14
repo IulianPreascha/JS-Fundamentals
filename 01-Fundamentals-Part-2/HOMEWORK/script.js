@@ -260,7 +260,9 @@ for(let i = 0; i < bills.length; i++) {
     tips.push(tip);
     totals.push(tip + bills[i]);
 }
-console.log(bills, tips, totals);
+console.log(bills);
+console.log(tips);
+console.log(totals);
 
 const calcAvarage = function(arr) {
     let sum = 0;
