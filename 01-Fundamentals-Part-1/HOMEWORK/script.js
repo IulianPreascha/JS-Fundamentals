@@ -262,4 +262,46 @@ const chechWinner = function (avgA, avgB) {
 
 const winners = chechWinner(avgScoreA, avgScoreB);
 
-console.log(winners);
+// console.log(winners);
+
+//! Coding Challenge #3
+
+const mark = {
+  fullName: 'Mark Miller',
+  mass: 78,
+  height: 1.69,
+  calcBmi: function () {
+    this.bmi = this.mass / this.height ** 2;
+    return this.bmi;
+  },
+};
+
+const john = {
+  fullName: 'John Smith',
+  mass: 92,
+  height: 1.95,
+  calcBmi: function () {
+    this.bmi = this.mass / this.height ** 2;
+    return this.bmi;
+  },
+};
+
+mark.calcBmi();
+john.calcBmi();
+
+console.log(+mark.bmi.toFixed(1));
+console.log(+john.bmi.toFixed(1));
+
+if (mark.bmi > john.bmi) {
+  console.log(
+    `${mark.fullName} BMI(${mark.bmi.toFixed(1)}) if higher than ${
+      john.fullName
+    }'s (${john.bmi.toFixed(1)}) !`
+  );
+} else if (mark.bmi < john.bmi) {
+  console.log(
+    `${john.fullName} BMI(${john.bmi.toFixed(1)}) if higher than ${
+      mark.fullName
+    }'s (${mark.bmi.toFixed(1)}) !`
+  );
+} else console.log(`Both have the same BMI (${mark.bmi.toFixed(1)})`);
