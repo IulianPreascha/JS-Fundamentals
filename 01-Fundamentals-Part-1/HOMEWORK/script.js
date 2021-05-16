@@ -208,15 +208,15 @@ const winner = function (dolphinsAvarageScore, koalasAvarageScore) {
 const bill = [275, 40, 430];
 const tip = [];
 
-const calcTip = function (bill) {
-  for (let i = 0; i < bill.length; i++) {
-    const tips =
-      bill[i] >= 50 && bill[i] <= 300 ? bill[i] * 0.15 : bill[i] * 0.2;
-    tip.push(tips);
-  }
-};
+// const calcTip = function (bill) {
+//   for (let i = 0; i < bill.length; i++) {
+//     const tips =
+//       bill[i] >= 50 && bill[i] <= 300 ? bill[i] * 0.15 : bill[i] * 0.2;
+//     tip.push(tips);
+//   }
+// };
 
-calcTip(bill);
+// calcTip(bill);
 // console.log(tip);
 
 // console.log(
@@ -266,6 +266,7 @@ const winners = chechWinner(avgScoreA, avgScoreB);
 
 //! Coding Challenge #3
 
+/*
 const mark = {
   fullName: 'Mark Miller',
   mass: 78,
@@ -305,3 +306,31 @@ if (mark.bmi > john.bmi) {
     }'s (${mark.bmi.toFixed(1)}) !`
   );
 } else console.log(`Both have the same BMI (${mark.bmi.toFixed(1)})`);
+*/
+
+//! Coding Challenge #4
+
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+const tips = [];
+const totals = [];
+
+const calcTip = function (bill) {
+  for (let i = 0; i < bill.length; i++) {
+    const tipss =
+      bill[i] >= 50 && bill[i] <= 300 ? bill[i] * 0.15 : bill[i] * 0.2;
+    tips.push(tipss);
+    totals.push(tipss + bill[i]);
+  }
+};
+
+calcTip(bills);
+
+const calcAvarage2 = function (arr) {
+  sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    sum += arr[i];
+  }
+  return sum / arr.length;
+};
+
+console.log(calcAvarage2(totals));
