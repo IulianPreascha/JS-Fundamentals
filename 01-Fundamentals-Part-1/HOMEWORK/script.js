@@ -308,7 +308,7 @@ if (mark.bmi > john.bmi) {
 } else console.log(`Both have the same BMI (${mark.bmi.toFixed(1)})`);
 */
 
-//! Coding Challenge #4
+//! Codding Challenge #4
 
 const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
 const tips = [];
@@ -316,14 +316,15 @@ const totals = [];
 
 const calcTip = function (bill) {
   for (let i = 0; i < bill.length; i++) {
-    const tipss =
-      bill[i] >= 50 && bill[i] <= 300 ? bill[i] * 0.15 : bill[i] * 0.2;
+    const tipss = bill[i] >= 50 && bill <= 300 ? bill[i] * 0.15 : bill[i] * 0.2;
     tips.push(tipss);
     totals.push(tipss + bill[i]);
   }
 };
 
 calcTip(bills);
+console.log(tips);
+console.log(totals);
 
 const calcAvarage2 = function (arr) {
   sum = 0;
