@@ -103,10 +103,15 @@ h1 {
   font-family: inherit;
   padding: 2rem 3rem;
   cursor: pointer;
+  outline: none;
 }
 
 .btn:hover {
   background-color: #ccc;
+}
+
+.btn:active {
+  transform: translateY(2px);
 }
 
 .message {
