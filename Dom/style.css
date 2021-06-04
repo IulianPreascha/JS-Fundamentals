@@ -132,12 +132,12 @@ h1 {
 
 @media only screen and (max-width: 600px) {
   header {
-   height: 50vh;
+   height: 40vh;
    border-bottom: 7px solid #eee;
 }
 
 main {
-  height: 60vh;
+  height: 50vh;
 }
 
 .right {
@@ -157,13 +157,13 @@ h1 {
 
 .between {
   font-size: 1rem;
-  top: 2.5rem;
+  top: 5rem;
   right: 1rem;
 }
 
 .again {
-  top: 1rem;
-  left: 1rem;
+  top: 4rem;
+  left: 3rem;
 }
 
 .guess {
