@@ -129,3 +129,62 @@ h1 {
 .label-score {
   margin-bottom: 2rem;
 }
+
+@media only screen and (max-width: 600px) {
+  header {
+   height: 50vh;
+   border-bottom: 7px solid #eee;
+}
+
+main {
+  height: 60vh;
+}
+
+.right {
+  font-size: 1rem;
+}
+
+/* ELEMENTS STYLE */
+h1 {
+  font-size: 2rem;
+}
+
+.number {
+  font-size: 3rem;
+  width: 15rem;
+  padding: 3rem 0rem;
+}
+
+.between {
+  font-size: 1rem;
+  top: 2.5rem;
+  right: 1rem;
+}
+
+.again {
+  top: 1rem;
+  left: 1rem;
+}
+
+.guess {
+  border: 3px solid #eee;
+  font-size: 2rem;
+  padding: 1.2rem;
+  width: 12rem;
+  margin-bottom: 1.5rem;
+}
+
+.btn {
+  font-size: 1rem;
+  padding: 1rem 1.5rem;
+}
+
+.message {
+  margin-bottom: 2rem;
+  height: 2rem;
+}
+
+.label-score {
+  margin-bottom: 2rem;
+}
+}
