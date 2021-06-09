@@ -105,6 +105,10 @@ p {
     padding: 2rem;
   }
 
+  h1 {
+    width: 90%;
+  }
+
   p {
     font-size: 1.4rem;
   }
