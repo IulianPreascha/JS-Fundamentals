@@ -177,7 +177,7 @@ main {
   }
   main {
     width: 83%;
-    height: 62%;
+    height: 68%;
     flex-direction: column;
     overflow: visible;
   }
@@ -196,11 +196,8 @@ main {
     margin: 5% 0;
   }
   .btn {
-    overflow: visible;
     left: 29%;
     top: 103%;
-    transform: translateX(-50%);
-    padding: 0.7rem 2.5rem;
   }
   .btn.btn--roll {
     margin-top: 60px;
