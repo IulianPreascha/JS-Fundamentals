@@ -95,27 +95,4 @@ btnHold.addEventListener('click', function () {
   }
 });
 
-//! MY SOLUTION
-
-// btnNew.addEventListener('click', function () {
-//   // Reset score
-//   score0El.textContent = 0;
-//   score1El.textContent = 0;
-//   diceEl.classList.add('hidden');
-
-//   document.getElementById(`current--${activePlayer}`).textContent = 0;
-//   // Remove background
-//   document
-//     .querySelector(`.player--${activePlayer}`)
-//     .classList.remove('player--winner');
-
-//   player0El.classList.add('player--active');
-
-//   scores[activePlayer] = 0;
-
-//   playing = true;
-// });
-
-//! Not my solution
-
 btnNew.addEventListener('click', init);
