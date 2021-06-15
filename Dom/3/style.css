@@ -186,8 +186,11 @@ main {
     justify-content: space-between;
   }
   .current {
-    width: 40%;
+    width: 50%;
     padding: 0rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
   }
   .current-label {
     margin: 5% 0;
