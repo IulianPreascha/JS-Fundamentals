@@ -177,7 +177,7 @@ main {
   }
   main {
     width: 90%;
-    height: 71%;
+    height: 68%;
     flex-direction: column;
     overflow: visible;
   }
@@ -195,7 +195,7 @@ main {
   .btn {
     overflow: visible;
     left: 29%;
-    top: 102%;
+    top: 103%;
     transform: translateX(-50%);
     padding: 0.7rem 2.5rem;
   }
