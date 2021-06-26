@@ -40,11 +40,10 @@ console.log(me);
 // console.log(year);
 
 var me = 'Jonas';
-let job = 'techer';
+let job = 'teacher';
 const year = 1991;
 
 //! Functions
-
 console.log(addDecl(2, 3));
 console.log(addExpr(2, 3));
 console.log(addArow(2, 3));
