@@ -119,48 +119,66 @@
 //! Again, var is windowed and arrow function in thiskey case will make same confusion and will take var from window
 // var firstName = 'Matilda';
 
-const jonas = {
-  firstName: 'Jonas',
-  year: 1991,
-  calcAge: function () {
-    // console.log(this);
-    console.log(2037 - this.year);
+// const jonas = {
+//   firstName: 'Jonas',
+//   year: 1991,
+//   calcAge: function () {
+//     // console.log(this);
+//     console.log(2037 - this.year);
 
-    //! Solution 1
-    //   const self = this; // self or that
-    //   const isMillenial = function () {
-    //     console.log(self);
-    //     console.log(self.year >= 1981 && self.year <= 1996);
-    //   };
-    //   isMillenial();
-    // },
+//     //! Solution 1
+//     //   const self = this; // self or that
+//     //   const isMillenial = function () {
+//     //     console.log(self);
+//     //     console.log(self.year >= 1981 && self.year <= 1996);
+//     //   };
+//     //   isMillenial();
+//     // },
 
-    //! Solution 2
-    const isMillenial = () => {
-      console.log(this);
-      console.log(this.year >= 1981 && this.year <= 1996);
-    };
-    isMillenial();
-  },
+//     //! Solution 2
+//     const isMillenial = () => {
+//       console.log(this);
+//       console.log(this.year >= 1981 && this.year <= 1996);
+//     };
+//     isMillenial();
+//   },
 
-  great: () => {
-    console.log(this);
-    console.log(`Hey ${this.firstName}`);
-  },
+//   great: () => {
+//     console.log(this);
+//     console.log(`Hey ${this.firstName}`);
+//   },
+// };
+// jonas.great();
+// jonas.calcAge();
+
+// const addExpr = function (a, b) {
+//   console.log(arguments);
+//   return a + b;
+// };
+// addExpr(2, 5);
+// console.log(addExpr(2, 5)); //! Just to show how it works
+// addExpr(2, 5, 8, 12);
+
+// const addArow = (a, b) => {
+//   console.log(arguments);
+//   return a + b;
+// };
+// addArow(2, 5, 8); // Not defined
+
+//! Primitives vs Objects
+
+let age = 30;
+let oldAge = age;
+age = 31;
+console.log(age);
+console.log(oldAge);
+
+const me = {
+  name: 'Jonas',
+  age: 30,
 };
-jonas.great();
-jonas.calcAge();
 
-const addExpr = function (a, b) {
-  console.log(arguments);
-  return a + b;
-};
-addExpr(2, 5);
-console.log(addExpr(2, 5)); //! Just to show how it works
-addExpr(2, 5, 8, 12);
-
-const addArow = (a, b) => {
-  console.log(arguments);
-  return a + b;
-};
-addArow(2, 5, 8); // Not defined
+const friend = me;
+friend.age = 27;
+console.log(`Friend:`, friend);
+console.log(`Me`, me);
