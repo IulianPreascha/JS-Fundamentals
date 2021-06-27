@@ -80,36 +80,73 @@
 
 //! This keyword
 
-console.log(this);
+// console.log(this);
 
-const calcAge = function (birthyear) {
-  console.log(2037 - birthyear);
-  console.log(this);
-};
-calcAge(1991);
+// const calcAge = function (birthyear) {
+//   console.log(2037 - birthyear);
+//   console.log(this);
+// };
+// calcAge(1991);
 
-const calcAgeArrow = birthyear => {
-  console.log(2037 - birthyear);
-  console.log(this);
-};
-calcAgeArrow(1980);
+// const calcAgeArrow = birthyear => {
+//   console.log(2037 - birthyear);
+//   console.log(this);
+// };
+// calcAgeArrow(1980);
+
+// const jonas = {
+//   year: 1991,
+//   calcAge: function () {
+//     console.log(this);
+//     console.log(2037 - this.year);
+//   },
+// };
+// jonas.calcAge();
+
+// const matilda = {
+//   year: 2017,
+// };
+
+// matilda.calcAge = jonas.calcAge;
+// matilda.calcAge();
+
+// //? undefined because of no year there
+// const f = jonas.calcAge;
+// f();
+
+//! Regular functions vs Arrow Functions
+
+//! Again, var is windowed and arrow function in thiskey case will make same confusion and will take var from window
+// var firstName = 'Matilda';
 
 const jonas = {
+  firstName: 'Jonas',
   year: 1991,
   calcAge: function () {
-    console.log(this);
+    // console.log(this);
     console.log(2037 - this.year);
+
+    //! Solution 1
+    //   const self = this; // self or that
+    //   const isMillenial = function () {
+    //     console.log(self);
+    //     console.log(self.year >= 1981 && self.year <= 1996);
+    //   };
+    //   isMillenial();
+    // },
+
+    //! Solution 2
+    const isMillenial = () => {
+      console.log(this);
+      console.log(this.year >= 1981 && this.year <= 1996);
+    };
+    isMillenial();
+  },
+
+  great: () => {
+    console.log(this);
+    console.log(`Hey ${this.firstName}`);
   },
 };
+jonas.great();
 jonas.calcAge();
-
-const matilda = {
-  year: 2017,
-};
-
-matilda.calcAge = jonas.calcAge;
-matilda.calcAge();
-
-//? undefined because of no year there
-const f = jonas.calcAge;
-f();
