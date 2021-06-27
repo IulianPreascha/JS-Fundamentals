@@ -150,3 +150,17 @@ const jonas = {
 };
 jonas.great();
 jonas.calcAge();
+
+const addExpr = function (a, b) {
+  console.log(arguments);
+  return a + b;
+};
+addExpr(2, 5);
+console.log(addExpr(2, 5)); //! Just to show how it works
+addExpr(2, 5, 8, 12);
+
+const addArow = (a, b) => {
+  console.log(arguments);
+  return a + b;
+};
+addArow(2, 5, 8); // Not defined
